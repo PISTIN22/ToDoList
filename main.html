@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Alışveriş uygulaması</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/3690223341.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <section id="sec1" class="sec1">
+            <div class="block-container centered">
+                <!-- başlık -->
+                <h1 class="baslik-ortala"  style="letter-spacing: 5px;">
+                    <i class="fa fa-cart-shopping "></i>
+                    Alışveriş Sepeti
+                    <i class="fa fa-cart-shopping"></i>
+                </h1>
+                <!-- bilgi alma kısmı -->
+                <div class="input-container">
+                    <input type="text" id="kullaniciGiris" placeholder="örn. yumurta.">
+                    <button class="ekle-button" onclick="urunGirisi()">
+                        Ekle
+                    </button>
+                </div>
+                <!-- listeleme kısmı -->
+                <ul id="item">
+                </ul>
+                <!-- sepeti temizle kısmı -->
+                <h1 class="alt-yazi " onclick="sepetiTemizle()" style="letter-spacing: 5px;">
+                    Sepeti Temizle
+                </h1>
+                <p style="text-align: center;">Girdiğiniz ürünleri sürükleyip hareket ettirebilirsiniz</p>
+            </div>
+        </section>
+    </main>
+    <!-- footer kısmı -->
+    <footer>
+        <p>
+            Kaydediciyi test etmek istiyorsanız sayfayı yenileyebilirsiniz (^-^) .
+        </p>
+        <ul class="icons">
+            <li>
+                <a href="https://www.instagram.com/________atakan___adali________/" target="_blank" title="instagram">
+                    <i id="footer-icons" class="fab fa-instagram" style="color: rgb(255, 48, 108);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/____PISTIN____" target="_blank" title="twitter">
+                    <i id="footer-icons" class="fab fa-twitter" style="color: rgb(29, 161, 242);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100003331672595" target="_blank" title="facebook">
+                    <i id="footer-icons" class="fab fa-facebook-f" style="color:rgb(66, 103, 178) ;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCLzOx8_TUC4cqtxWALz8Ttg" target="_blank" title="youtube">
+                    <i id="footer-icons" class="fab fa-youtube" style="color: rgb(255, 0, 0);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://steamcommunity.com/id/33855181/" target="_blank" title="steam">
+                    <i id="footer-icons" class="fab fa-steam" style="color: rgb(199, 213, 224);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/user/2153rznbddt4pz7bkln5w6m3i" target="_blank" title="spotify">
+                    <i id="footer-icons" class="fab fa-spotify" style="color: rgb(30, 215, 96);"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/PISTIN22" target="_blank" title="github">
+                    <i id="footer-icons" class="fab fa-github" style="color: rgb(255, 255, 255);"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
